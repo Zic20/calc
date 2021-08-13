@@ -1,0 +1,67 @@
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+/* body {
+    padding: 50px 10;
+    margin: 50px;
+} */
+table {
+    width: 80%;
+    margin: auto;
+    padding: 4px;
+}
+td,th {
+    padding:4px;
+    text-align: center;
+}
+
+
+form{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+input {
+    padding:5px;
+    height: 50%;
+    margin: 0 10px;
+}
+
+
+
+.activityList {
+    margin: 20px 30px;
+}
+
+.fl {
+    float: left;
+}
+
+.center {
+    margin: auto;
+}
+
+.services-body {
+    padding: 30px 10px;
+}
+
+.footer {
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.footer a {
+    color: white;
+}
+
+.new {
+    margin: auto;
+}
+
+.entry {
+    margin: auto;
+    margin: 15px 10px;
+}

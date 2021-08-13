@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="/index-1.html">Home</a><a class="navbar-brand"
+                href="#page-top"></a><button data-toggle="collapse" data-target="#navbarResponsive"
+                class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
+                    class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="learningcontract.html">learning contracts</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                            aria-expanded="false" href="#">Time sheet</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="timeSheet.html">view time sheet</a>
+                           <a class="dropdown-item" role="presentation" href="#">summary time sheet</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team">Progress
+                            Tracker</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <div class="container-fluid">
+        <div class="form-row">
+            <div class="form-group col-md-2 entry">
+
+                <input type="text" name="firstWeek" id="firstWeek" class="form-control" placeholder="First Week">
+            </div>
+            <div class="form-group col-md-2 entry">
+
+                <input type="text" name="secondWeek" id="secondWeek" class="form-control" placeholder="Second Week">
+            </div>
+            <div class="col-md-2 form-group entry">
+               &nbsp; <button class="btn btn-primary">Load &nbsp;<i class="bi bi-file-text"></i></button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <button class="btn btn-primary new" data-toggle="modal" data-target="#mymodal">New Activity &nbsp; <i class="bi bi-plus-circle-fill"></i></button>
+        </div>
+        <!-- Modal for activity input -->
+        <div class="modal" id="mymodal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-body">New Activity</h4>
+                        <button type="button" class="close" data-dismiss="modal"><i class="bi bi-x-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form col-md-12">
+                            <!-- Activity Input form -->
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <!-- <label for="week" class="form-control-label">Week</label> -->
+                                        <input class="form-control" type="text" placeholder="Enter Week" id="week"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <!-- <label for="date" class="form-control-label">Date</label> -->
+                                        <input class="form-control" type="date" name="date" id="date" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- <label for="act" class="form-control-label">Activity</label> -->
+                                        <input class="form-control" type="text" placeholder="Activity" id="act"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- <label for="type" class="form-input-label">Activity Type</label> -->
+                                        <select class="form-control" name="activityType" id="type"
+                                            placeholder="Activity Type">
+                                            <option value="Client Contact">Client Contact</option>
+                                            <option value="Instructor Conference">Instructor Conference</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row container-fluid">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="firstTime" class="form-control-label">Start Time</label>
+                                        <input class="form-control" type="time" name="" id="firstTime">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="secondTime" class="form-control-label">End Time</label>
+                                        <input class="form-control" type="time" name="" id="secondTime" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-5 center">
+                                    <label for="result" class="form-input-label">Total Hours</label>
+                                    <input class="form-control" type="text" name="" id="result" readonly>
+                                </div>
+                                
+                            </div>
+                            <br>
+                                <button class="btn  btn-success btn center" id="submit">Get Time Input &nbsp; <i class="bi bi-clock-history"></i></button>
+                            <br><br>
+                            <button class="btn  btn-primary center" id="add"><i class="bi bi-folder-plus"></i> &nbsp;Save</button>
+                            <button class="btn  btn-primary center" id="totals">Add Total &nbsp; <i class="bi bi-plus-circle-fill"></i> </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity list -->
+        <div class="activityList">
+            <table class="table table-hover  table-striped table-condensed" id="list">
+                <tr>
+                    <th>Week</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Time Input</th>
+                    <th>Total Hour(s)</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/assets/js/script.min.js"></script>
+    <script src="practicumjs.js"></script>
+</body>
+
+</html>
